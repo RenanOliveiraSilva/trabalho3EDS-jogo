@@ -24,7 +24,7 @@
                         <p>Número secreto: </p>
 
                     </h3>
-                    <img src="errado.svg" alt="">
+                    <img src="imgs/errado.svg" alt="">
                 </div>
 
             </div>
@@ -39,7 +39,7 @@
                         <p>Palpite correto</p>
                         <p>Número secreto: </p>
                     </h3>
-                    <img src="correto.svg" alt="">
+                    <img src="imgs/correto.svg" alt="">
                 </div>
 
             </div>
@@ -79,10 +79,10 @@
                     
                     <div class="form">
                         <span class="heading"> Digite seu palpite: </span>
-                        <input placeholder="Número" type="number" class="input">
+                        <input placeholder="Número" type="number" class="input" id="inputNum">
                         <div class="button-container">
                             
-                            <button class="send-button" id="myBtn" onclick="openModalW()"> Enviar</button>
+                            <button class="send-button" id="myBtn" onclick="adivinhaNumero()"> Enviar</button>
                             
                         </div>
                     </div>
@@ -91,11 +91,11 @@
 
             <div class="dica">
                 <div class="dicaNum">
-                    <h2>O SEU PALPITE FOI MAIOR QUE O NÚMERO SECRETO</h2>
+                    
                     
                 </div>
-                <div class="svgDica">
-                    <img src="dica.svg" alt="DICAS">
+                <div class="svgDica" style="display: none;">
+                    <img src="./imgs/dica.svg" alt="DICAS">
 
                 </div>
 
