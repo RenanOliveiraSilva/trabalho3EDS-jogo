@@ -1,6 +1,6 @@
 .form-container {
   max-width: 400px;
-  margin: 30px;
+  margin: 15px;
   background-color: #001925;
   padding: 30px;
   border-left: 5px solid #ca00c7;
@@ -17,7 +17,7 @@
 
 .form-container .form .input {
   color: #87a4b6;
-  width: 100%;
+  width: 94.2%;
   background-color: #002733;
   border: none;
   outline: none;
@@ -54,10 +54,11 @@
 .form-container .form .button-container {
   display: flex;
   gap: 10px;
+
 }
 
 .form-container .form .button-container .send-button {
-  flex-basis: 100%;
+  flex-basis: 110%;
   background: #ca00c7;
   padding: 10px;
   color: #001925;
@@ -71,23 +72,6 @@
   background: transparent;
   border: 1px solid #ca00c7;
   color: #ca00c7;
-}
-
-
-.form-container .form .button-container .reset-button {
-  position: relative;
-  text-align: center;
-  padding: 10px;
-  color: #ca00c7;
-  font-weight: bold;
-  background: #001925;
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
-  transition: all 0.2s ease-in-out;
-}
-
-.form-container .form .button-container .reset-button:hover {
-  background: #ca00c7;
-  color: #001925;
 }
 
 /* The Modal (background) */
@@ -111,19 +95,31 @@
   padding: 20px;
   border: 1px solid #888;
   width: 30%; /* Could be more or less, depending on screen size */
-  
+  text-align: center;
 }
 
 /* The Close Button */
-.close {
+.closeC {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.closeC:hover {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.closeW {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeW:hover {
   color: black;
   text-decoration: none;
   cursor: pointer;
@@ -146,7 +142,7 @@ body {
   width: 100%;
   height: 100%;
   justify-content: center;
-  padding-top: 180px;
+  padding-top: 80px;
 }
 
 .menu{
@@ -183,7 +179,38 @@ li {
 .num {
   width: 100px;
   height: 100px;
-  background-color: #B772E2;
+  background-color: #fff;
+  border: 3px solid #001925;
   text-align: center;
   justify-items: center;
+}
+
+.tittle h3 {
+  color: #fff;
+  text-align: center;
+  border-bottom: #fff 1.5px solid;
+  padding-bottom: 8px;
+}
+
+.dica {
+  width: 100%;
+  height: 280px;
+  
+}
+
+.dicaNum {
+  color: #fff;
+  width: 80%;
+  margin-left: 15px;
+}
+
+.svgDica {
+  width: 90%;
+  display: flex;
+  justify-content: end;
+}
+
+.svgDica img {
+  width: 220px;
+  height: 220px;
 }

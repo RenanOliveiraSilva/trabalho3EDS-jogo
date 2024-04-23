@@ -13,10 +13,41 @@
     <body>
 
         <div class="main">
+            
+            <div id="myModalWrong" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="closeW">&times;</span>
+                    <h3>
+                        <p>Suas tentativas acabaram</p>
+                        <p>Número secreto: </p>
+
+                    </h3>
+                    <img src="errado.svg" alt="">
+                </div>
+
+            </div>
+
+            <!-- The Modal Correct -->
+            <div id="myModalCorrect" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="closeC">&times;</span>
+                    <h3>
+                        <p>Palpite correto</p>
+                        <p>Número secreto: </p>
+                    </h3>
+                    <img src="correto.svg" alt="">
+                </div>
+
+            </div>
+
             <div class="menu">
-                
+
                 <div class="intrucoes">
-                    <h3>JOGO ADIVINHE O NÚMERO:</h3>
+                    <h3 style="text-align: center;">JOGO ADIVINHE O NÚMERO:</h3>
                     <ul>
                         <li>Seu objetivo é adivinhar o número sorteado com apenas cinco tentativas;</li>
                         <li>Digite o seu palpite na caixa ao lado;</li>
@@ -37,22 +68,41 @@
             </div>
                 
         <div class="side">
-            
+            <div class="tittle">
+                <h3>ACERTE O NÚMERO</h3>
+            </div>
+        
+
+            <div class="formulario">
+                
+                <div class="form-container">
+                    
+                    <div class="form">
+                        <span class="heading"> Digite seu palpite: </span>
+                        <input placeholder="Número" type="number" class="input">
+                        <div class="button-container">
+                            
+                            <button class="send-button" id="myBtn" onclick="openModalW()"> Enviar</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dica">
+                <div class="dicaNum">
+                    <h2>O SEU PALPITE FOI MAIOR QUE O NÚMERO SECRETO</h2>
+                    
+                </div>
+                <div class="svgDica">
+                    <img src="dica.svg" alt="DICAS">
+
+                </div>
+
+
+            </div>
         </div>
+        
 
     </body>
 </html>
-
-<!-- 
-<div class="form-container">
-    
-    <div class="form">
-        <span class="heading"> Digite seu palpite: </span>
-        <input placeholder="Número" type="number" class="input">
-        <div class="button-container">
-            
-            <button class="send-button">Enviar</button>
-            
-        </div>
-    </div>
-</div> -->
